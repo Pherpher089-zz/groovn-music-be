@@ -25,8 +25,8 @@ router.get(
 
 const REDIRECT_URI =
   process.env.NODE_ENV === 'production'
-    ? 'https://groovn-frontend.netlify.com'
-    : 'http://localhost:3000/protected';
+    ? process.env.DEV_URI
+    : process.env.DEV_URI;
 
 router.get(
   '/auth/spotify/callback',
