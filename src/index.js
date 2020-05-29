@@ -14,8 +14,8 @@ const app = express();
 
 const CORS_ORIGIN =
   process.env.NODE_ENV === 'production'
-    ? 'http://localhost:3000'
-    : 'http://localhost:3000';
+    ? process.env.DEV_URI
+    : process.env.DEV_URI;
 
 let CorsOptions = {
   origin: CORS_ORIGIN,

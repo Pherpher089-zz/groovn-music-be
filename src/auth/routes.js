@@ -25,8 +25,8 @@ router.get(
 
 const REDIRECT_URI =
   process.env.NODE_ENV === 'production'
-    ? process.env.DEV_URI
-    : process.env.DEV_URI;
+    ? process.env.DEV_CALLBACK_URI
+    : process.env.DEV_CALLBACK_URI;
 
 router.get(
   '/auth/spotify/callback',
