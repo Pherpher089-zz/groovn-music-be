@@ -69,7 +69,7 @@ const startServer = async () => {
   // Set database URI based on whether prod or dev
   const DATABASE_URL =
     process.env.NODE_ENV === 'production'
-      ? process.env.MONGODB_URI
+      ? process.env.MONGOLAB_WHITE_URI
       : process.env.DEV_DATABASE_URL;
 
   // Connect to mongoose using DATABASE_URL and await the promise to resolve
