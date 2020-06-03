@@ -77,7 +77,7 @@ const startServer = async () => {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useFindAndModify: false,
-    dbName: 'eroku_vqdzw2gm',
+    dbName: 'heroku_vqdzw2gm',
   });
 
   // Set port
