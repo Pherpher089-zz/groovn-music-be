@@ -31,6 +31,7 @@ passport.use(
         accessToken,
         refreshToken,
       });
+      console.log(newUser);
       newUser.save();
       done(null, newUser);
     }
