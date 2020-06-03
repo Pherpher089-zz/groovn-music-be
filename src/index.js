@@ -77,7 +77,7 @@ const startServer = async () => {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useFindAndModify: false,
-    dbName: 'groovn',
+    dbName: 'eroku_vqdzw2gm',
   });
 
   // Set port
