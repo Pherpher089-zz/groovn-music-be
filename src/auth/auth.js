@@ -33,7 +33,7 @@ passport.use(
       });
       console.log('New User');
       console.log(newUser);
-      newUser.save();
+
       done(null, newUser);
     }
   )

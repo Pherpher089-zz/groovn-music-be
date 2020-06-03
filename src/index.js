@@ -73,13 +73,12 @@ const startServer = async () => {
       : process.env.DEV_DATABASE_URL;
 
   // Connect to mongoose using DATABASE_URL and await the promise to resolve
-  let mongoDb = await mongoose.connect(DATABASE_URL, {
+  await mongoose.connect(DATABASE_URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useFindAndModify: false,
     dbName: 'heroku_vqdzw2gm',
   });
-  console.log(mongoDb);
   // Set port
   const PORT = process.env.PORT || 4000;
 
