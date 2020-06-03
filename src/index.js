@@ -77,7 +77,7 @@ const startServer = async () => {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useFindAndModify: false,
-    dbName: 'heroku_vqdzw2gm',
+    dbName: 'heroku_8gtnpt74',
   });
   // Set port
   const PORT = process.env.PORT || 4000;
