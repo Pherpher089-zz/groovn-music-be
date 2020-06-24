@@ -74,6 +74,8 @@ const startServer = async () => {
 
   // Connect to mongoose using DATABASE_URL and await the promise to resolve
   await mongoose.connect(DATABASE_URL, {
+    username: process.env.USE,
+    password: process.env.PASS,
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useFindAndModify: false,
